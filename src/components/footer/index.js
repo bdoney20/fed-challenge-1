@@ -1,4 +1,9 @@
 import React from 'react';
+import youtube from '../../images/footer/youtube.png';
+import facebook from '../../images/footer/facebook.png';
+import instagram from '../../images/footer/instagram.png';
+import pinterest from '../../images/footer/pinterest.png';
+import twitter from '../../images/footer/twitter.png';
 import './index.css';
 
 const Footer = () => {
@@ -43,9 +48,22 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <hr></hr>
                 <div className="social-links-container">
-                    <div className="social-links">Social Links</div>
+                    <div className="social-links">
+                        <ul className="social-list">
+                            <li><a href="/"><img src={youtube} alt="youtube social logo"></img></a></li>
+                            <li><a href="/"><img src={pinterest} alt="pinterest social logo"></img></a></li>
+                            <li><a href="/"><img src={facebook} alt="facebook social logo"></img></a></li>
+                            <li><a href="/"><img src={twitter} alt="twitter social logo"></img></a></li>
+                            <li><a href="/"><img src={instagram} alt="instagram social logo"></img></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="legal">
+                    <div className="language-button">English</div>
+                        <a href="/">&copy; iFit.com. All rights Reserved.</a>
+                        <a href="/">Privacy Policy</a>
+                        <a href="/">Terms of Use</a>
                 </div>
             </nav>
         </section>

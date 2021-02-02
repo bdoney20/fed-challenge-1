@@ -17,9 +17,14 @@
     padding-left: 25%;
 }
 
+.group-container h4 {
+    margin-bottom: 8px;
+}
+
 .group-list {
     text-align: left;
     padding-top: 0;
+    height: auto;
 }
 
 .group-item {
@@ -30,4 +35,31 @@
 .group-item a {
     text-decoration: none;
     color: #fff;
+}
+
+.legal {
+    padding: 20px 0;
+}
+
+.legal a {
+    padding: 0 10px;
+    color: #fff;
+}
+
+.language-button {
+    position: absolute;
+    margin-left: 2%;
+}
+
+.social-links-container {
+    border-top: 2px solid #585A5D;
+    border-bottom: 2px solid #585A5D;
+}
+
+.social-list {
+    padding-bottom: 21.5px;
+}
+
+.social-list li {
+    margin: 0 12px;
 }
