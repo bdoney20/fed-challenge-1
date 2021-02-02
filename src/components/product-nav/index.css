@@ -1,0 +1,19 @@
+.product-nav ul {
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1.2px solid #D5D6D6;
+    height: 45px;
+    letter-spacing: .0714em;
+}
+
+.product {
+    background-color: rgb(255, 255, 255);
+    color: rgba(46,49,52,.8);
+    text-decoration: none;
+    padding: 15px 20px;
+    border-right: 1.2px solid #D5D6D6;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 25px;
+    /* boarder-right-style: solid 1px #D5D6D6; */
+}

@@ -1,0 +1,58 @@
+li {
+    display: inline-block;
+    padding-top: 8px;
+}
+
+ul {
+    height: 58px;
+    padding-top: 21.5px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.main-nav {
+    border-bottom: 1px solid;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.page-link {
+    padding: 21.5px 20px;
+    font-size: .875rem;
+    font-weight: 500;
+    color: rgba(46,49,52,.8);
+    letter-spacing: .0714em;
+}
+
+.sign-up-button {
+    border-radius: 4px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    background-color: #0069D2;
+    height: 36px;
+    width: 90px;
+}
+
+.button-container {
+    padding-right: 20px;
+    float: right;
+}
+
+.logo-container {
+    padding-left: 40px;
+    float: left;
+}
+
+.ifit-logo {
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: 50;
+}
+
+.ifit-logo img {
+    padding-top: 7px;
+    padding-right: 10px;
+}

@@ -1,0 +1,90 @@
+.library-container {
+    padding: 25px 30px;
+    position: relative;
+
+    .library-workout-container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        /* justify-content: space-around; */
+
+        .workout {
+            position: relative;
+            width: auto;
+            max-width: 288px;
+            min-width: 180px;
+            margin: 10px auto;
+            border-radius: 4px;
+            box-shadow: 0 1px 2px 0 rgba(46, 49, 52, .40);
+            transition: .5s;
+            overflow: hidden;
+        
+            &:hover {
+                box-shadow: 0 7px 12px 0 rgba(46, 49, 52, .30);
+                transition: .5s;
+
+                .workout-image {
+                    transform: scale(1.1);
+                    transition: .5s;
+                }
+
+                // .details {
+                //     display: block;
+                //     transition: .5s;
+                // }
+            }
+
+            &.showDetails {
+                .details {
+                    display: block;
+                }
+            }
+
+            .workout-image {
+                width: 100%;
+                transition: .5s;
+                float: right;
+                margin: auto;
+                /* width: clamp(180px, 25vw, 288px); */
+            }
+
+            .details {
+                color: blue;
+                position: absolute;
+                bottom: 7px;
+                left: 5px;
+                display: none;
+            }
+
+            .workout-title-container {
+                display: grid;
+                grid-template-columns: 1fr 28px;
+                padding: 10px 10px;
+
+                .workout-title {
+                    word-wrap: break-word;
+                    align-items: flex-start;
+                    margin-top: 0;
+                }
+
+                .workout-trainer {
+                    padding-right: 10px;
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

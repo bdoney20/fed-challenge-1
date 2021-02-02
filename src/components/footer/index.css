@@ -1,0 +1,33 @@
+.footer-container {
+    text-align: center;
+    align-items: center;
+    background-color: #2e3134;
+    color: #fff;
+}
+
+.most-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 30px 48px;
+    margin: 0 auto;
+}
+
+.group-container {
+    text-align: left;
+    padding-left: 25%;
+}
+
+.group-list {
+    text-align: left;
+    padding-top: 0;
+}
+
+.group-item {
+    display: block;
+    line-height: 2;
+}
+
+.group-item a {
+    text-decoration: none;
+    color: #fff;
+}
