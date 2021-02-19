@@ -21,8 +21,10 @@ export default class App extends Component {
                     <MediaSlider/>
                     <Library/>
                     <Equipment/>
-                    <Footer />
                 </main>
+                <footer>
+                    <Footer />
+                </footer>
             </div>
         )
     }

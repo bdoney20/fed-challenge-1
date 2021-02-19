@@ -31,15 +31,14 @@ const WorkoutCard = () => {
     const [showDetails, setDetails] = useState();
     const [workoutObject] = useState(workout);
     
-    function onClick(id) {
+    function onEnter(id) {
         setDetails(id)
-        console.log(showDetails);
     }
 
     
         const workoutCard = workoutObject.map((card) => {
             return (
-                <div className={"workout " + (card.id === showDetails ? 'showDetails' : '')} onClick={() => {onClick(card.id)}}>
+                <div className={"workout " + (card.id === showDetails ? 'showDetails' : '')} onMouseEnter={() => {onEnter(card.id)}} onMouseLeave={() => onEnter(null)}>
                     <img className="workout-image" src={card.workoutImage} alt="workout"/>
                     <div className="workout-title-container">
                         <h4 className="workout-title">{card.workoutTitle}</h4>
