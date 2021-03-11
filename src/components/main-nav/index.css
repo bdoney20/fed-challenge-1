@@ -35,11 +35,6 @@ ul {
     width: 90px;
 }
 
-.button-container {
-    padding-right: 20px;
-    float: right;
-}
-
 .logo-container {
     padding-left: 40px;
     float: left;
@@ -55,4 +50,44 @@ ul {
 .ifit-logo img {
     padding-top: 7px;
     padding-right: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+header button {
+    display: flex;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.mobile-menu {
+    display: inline-block;
+    position: absolute;
+    background-color: #fff;
+    width: 288px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+@media only screen and (min-width: 61.25em) {
+    .hide {
+        display: block;
+    }
+
+    header button {
+        display: none;
+    }
+
+    .button-container {
+        display: block;
+        padding-right: 20px;
+        float: right;
+    }
 }

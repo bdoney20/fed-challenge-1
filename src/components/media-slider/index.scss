@@ -1,17 +1,31 @@
 .media-slider {
-    height: 232px;
     background-color: #F4F5F7;
-    margin: auto;
+    width: 100%;
+    padding: 24px 0;
 
     .slide {
-      background-color: white;
+      display: flex;
       align-items: center;
+      justify-content: center;
       height: 184px;
-      width: 440px;
+      padding: 0 10px;
+      background-color: #fff;
       border-radius: 4px;
+      border: 1px solid rgba(244,245,247,.32);
       box-shadow: 0 1px 2px 0 rgba(46, 49, 52, .40);
-      text-align: center;
-      align-items: center;
+
+      img {
+        margin: 0 auto;
+      }
+
+      p {
+        font-size: 1rem;
+        letter-spacing: .01875em;
+        line-height: 1.5;
+        margin-top: 10px;
+        color: rgba(46,49,52,.8);
+        text-align: center;
+      }
     }
 }
 
@@ -33,38 +47,8 @@
 }
 
 .slick-slide {
-  margin: 0 30px;
+  width: 100%;
+  display: inline-block;
+  padding: 0 20px;
+  outline: none;
 }
-
-.slick-list {
-  margin: 0 -30px;
-}
-
-/* .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  } */

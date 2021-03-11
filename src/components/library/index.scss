@@ -1,19 +1,10 @@
-@media only screen and (min-width: 78.125em) {
-    .library-workout-container {
-        display: grid;
-        grid-template-columns: repeat(4, auto);
-    }
-    
-}
 
     .library-container {
         padding: 25px 30px;
         position: relative;
     
         .library-workout-container {
-            // grid-template-columns: repeat(2, auto);
-            // grid-template-rows: repeat(2, auto);
-            /* justify-content: space-around; */
+            display: grid;
     
             .workout {
                 position: relative;
@@ -30,15 +21,10 @@
                     box-shadow: 0 7px 12px 0 rgba(46, 49, 52, .30);
                     transition: .5s;
     
-                    // .workout-image {
-                    //     transform: scale(1.1);
-                    //     transition: .5s;
-                    // }
-    
-                    // .details {
-                    //     display: block;
-                    //     transition: .5s;
-                    // }
+                    .details {
+                        display: block;
+                        transition: .5s;
+                    }
                 }
     
                 &.showDetails {
@@ -81,6 +67,26 @@
                 
             }
         }
+    }
+
+    
+    @media only screen and (min-width: 41.25em) {
+        .library-workout-container {
+            grid-template-columns: repeat(2, auto);
+        }
+    }
+
+    @media only screen and (min-width: 61.25em) {
+        .library-workout-container {
+            grid-template-columns: repeat(3, auto);
+        }
+    }
+
+    @media only screen and (min-width: 78.125em) {
+        .library-workout-container {
+            grid-template-columns: repeat(4, auto);
+        }
+        
     }
 
 

@@ -5,7 +5,7 @@
 }
 
 .equipment-container {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -35,4 +35,23 @@
 
 #bikes {
     margin-top: 12px;
+}
+
+@media only screen and (min-width: 41.25em) {
+    .equipment-container {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media only screen and (min-width: 61.25em) {
+    .equipment-container {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media only screen and (min-width: 78.125em) {
+    .equipment-container {
+        grid-template-columns: repeat(4, auto);
+    }
+    
 }
